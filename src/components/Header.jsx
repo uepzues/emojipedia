@@ -1,9 +1,9 @@
 function Header() {
   return (
     <>
-      <div>
+      <header>
         <h1>Emojipedia</h1>
-      </div>
+      </header>
     </>
   );
 }

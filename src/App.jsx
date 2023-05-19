@@ -1,14 +1,15 @@
 import Card from "./components/Card";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import emojipedia from "./components/docs";
 
 function createEntry(eTerm) {
   return (
     <Card
+      key={eTerm.id}
       emoji={eTerm.emoji}
       name={eTerm.name}
       meaning={eTerm.meaning}
-      key={eTerm.key}
     />
   );
 }
@@ -16,8 +17,11 @@ function createEntry(eTerm) {
 function App() {
   return (
     <>
-      <Header />
-      <div>{emojipedia.map(createEntry)}</div>
+      <div>
+        <Header />
+        <div className="card-group">{emojipedia.map(createEntry)}</div>
+        <Footer />
+      </div>
     </>
   );
 }

@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 function Card(props) {
   return (
     <>
-      <div>
-        <h1>{props.emoji}</h1>
+      <div className="card">
+        <h2>{props.emoji}</h2>
         <p>{props.name}</p>
         <p>{props.meaning}</p>
       </div>
