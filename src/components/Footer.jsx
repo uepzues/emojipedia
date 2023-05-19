@@ -2,7 +2,7 @@ function Footer() {
   return (
     <>
       <footer>
-        <p>
+        <p className="link">
           <a href="https://github.com/uepzues">uepzues</a>
         </p>
         <p>Copyright &copy; 2023</p>
